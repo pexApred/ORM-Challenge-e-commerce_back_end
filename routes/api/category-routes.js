@@ -64,7 +64,7 @@ router.put('/:id', async (req, res) => {
     }
     const categoryData = await Category.findByPk(req.params.id);
 
-    res.status(200).json(categoryData);
+    res.status(200).json({ message: 'Category Updated Successfully!' });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -84,7 +84,7 @@ router.delete('/:id', async (req, res) => {
       return;
     }
 
-    res.status(200).json(categoryData);
+    res.status(200).json({ message: 'Deleted Category with selected id.'} );
   } catch (err) {
     res.status(500).json(err);
   }
