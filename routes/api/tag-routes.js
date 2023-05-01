@@ -13,12 +13,12 @@ router.get('/', async (req, res) => {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock']
       },
-      { 
-        model: ProductTag,
-        attributes: ['id', 'product_id','tag_id']
-      }
+      // { 
+      //   model: ProductTag,
+      //   attributes: ['id', 'product_id','tag_id']
+      // }
     ]
-  });
+    });
     res.status(200).json(tagData);
   } catch (err) {
     res.status(500).json(err);
@@ -35,10 +35,10 @@ router.get('/:id', async (req, res) => {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock']
       },
-      {
-        model: ProductTag,
-        attributes: ['id', 'product_id','tag_id']
-      }
+      // {
+      //   model: ProductTag,
+      //   attributes: ['id', 'product_id','tag_id']
+      // }
     ]
     });
     if (!tagData) {
