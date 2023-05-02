@@ -11,12 +11,9 @@ router.get('/', async (req, res) => {
       include: [
       {
         model: Product,
+        through: ProductTag,
         attributes: ['id', 'product_name', 'price', 'stock']
       },
-      // { 
-      //   model: ProductTag,
-      //   attributes: ['id', 'product_id','tag_id']
-      // }
     ]
     });
     res.status(200).json(tagData);
@@ -33,12 +30,9 @@ router.get('/:id', async (req, res) => {
       include: [
       {
         model: Product,
+        through: ProductTag,
         attributes: ['id', 'product_name', 'price', 'stock']
       },
-      // {
-      //   model: ProductTag,
-      //   attributes: ['id', 'product_id','tag_id']
-      // }
     ]
     });
     if (!tagData) {
