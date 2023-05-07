@@ -66,7 +66,7 @@ The project uses the following technologies:
 * dotenv
 
 Link to walkthrough below:
-
+https://drive.google.com/file/d/1u26Lzc0yD_ENBf1KsZi9htmKLdaubClB/view
 
 ## Credits
 
