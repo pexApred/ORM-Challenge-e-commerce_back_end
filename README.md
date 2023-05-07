@@ -1,27 +1,39 @@
-#  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# E-commerce Back End (ORM Challenge) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This project is a back end for an e-commmerce website built with the latest technologies using Express.js API and configured to use Sequelize to interact with a MySQL database. 
+This project is a back end for an e-commmerce website built with the latest technologies using Node.js, Express.js, Sequelize, and MySQL. It provides a RESTful API that allows users to create, read, update, and delete products, categories, and tags, as well as view all products, categories, and tags, and view a single product, category, or tag by its ID. The API uses Sequelize to interact with a MySQL database, and includes association methods to create relationships between the different models.
 
 The goal of this project is to create a fully functional back end for an e-commerce site, allowing the company to compete with other e-commerce companies.
 
 The application satifies the following user story and acceptance criteria:
 
 AS A manager at an internet retail company
+
 I WANT a back end for my e-commerce website that uses the latest technologies
+
 SO THAT my company can compete with other e-commerce companies
 
 GIVEN a functional Express.js API
+
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+
 THEN I am able to connect to a database using Sequelize
+
 WHEN I enter schema and seed commands
+
 THEN a development database is created and is seeded with test data
+
 WHEN I enter the command to invoke the application
+
 THEN my server is started and the Sequelize models are synced to the MySQL database
+
 WHEN I open API GET routes in Insomnia Core for categories, products, or tags
+
 THEN the data for each of these routes is displayed in a formatted JSON
+
 WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
+
 THEN I am able to successfully create, update, and delete data in my database
 
 ## Table of Contents
@@ -29,6 +41,7 @@ THEN I am able to successfully create, update, and delete data in my database
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
+- [Contributing](#contributing)
 - [License](#license)
 - [Badges](#badges)
 
@@ -40,9 +53,9 @@ To run the application, the following steps should be followed:
 2. Navigate to the project directory using the command line.
 3. Run the command "npm install" to install all necessary dependencies.
 4. Create an envireonment variable file '.env' in the root directory and add a database name, MySQL username, and MySQL password to it.
-5. Run 'npm run seed' to create and seed the database.
+5. Run 'source db/schema.sql' and 'npm run seed' to create and seed the database.
 6. Run 'npm start' to start the server and sync the Sequelize models to the MySQL database.
-
+7. You can then use a tool like Insomnia to test the API Routes.
 
 ## Usage
 
@@ -64,6 +77,10 @@ Benicio Lopez - Tutor
 Video Submission guide - https://coding-boot-camp.github.io/full-stack/computer-literacy/video-submission-guide
 
 NPM Documentation: https://www.npmjs.com/package/mysql2
+
+## Contributing
+
+If you would like to contribute to this project, please open a pull request or submit an issue on the GitHub repository.
 
 ## License
 
